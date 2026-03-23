@@ -21,7 +21,7 @@ const App: React.FC = () => {
       <h1>Task Manager</h1>
 
       <div className="input-group">
-        <input
+        <input 
           type="text"
           value={text}
           onChange={(e) => setText(e.target.value)}
@@ -53,6 +53,7 @@ const App: React.FC = () => {
       </ul>
 
       {todos.length === 0 && <p className="empty-msg">No tasks yet. Add one above!</p>}
+
     </div>
   );
 };
